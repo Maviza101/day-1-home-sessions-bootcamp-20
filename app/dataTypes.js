@@ -6,8 +6,9 @@ module.exports = {
 		switch (argType) {
 			case 'string':
 				return arg.length;
+        break;
 
-      // Both null and Array will have type 'object', so they're handled in the same place.
+      // Both null and Array will have type 'object', so they're handled in the same case.
 			case 'object':
         if (arg == null) {
           return 'no value';
@@ -16,11 +17,14 @@ module.exports = {
           // If there's no third element, Javascript will return undefined, rather than throw an exception.
           return arg[2];
         }
+        break;
 			case 'undefined':
-			    return 'no value';
+		    return 'no value';
+        break;
 
       case 'boolean':
         return arg;
+        break;
 
       case 'number':
         if (arg < 100) {
@@ -32,9 +36,11 @@ module.exports = {
         else {
           return 'equal to 100';
         }
+        break;
 
       case 'function':
         return arg(true);
+        break;
 		}
 	}
 }
