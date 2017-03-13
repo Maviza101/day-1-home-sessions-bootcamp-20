@@ -1,6 +1,9 @@
 'use strict';
 
 describe("Find the prime numbers between 0 and a given number n, inclusive", function() {
+  var myApp = require("../app/getPrimes.js");
+  var getPrimes = myApp.getPrimes;
+
   describe("Verify Function Existence", function() {
     it("should be defined", function() {
       expect(getPrimes).toBeDefined();
