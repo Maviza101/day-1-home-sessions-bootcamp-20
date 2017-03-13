@@ -42,7 +42,7 @@ describe("Test OOP Concepts", function() {
     });
 
     it("should return `male` for property gender", function() {
-      expect(male.gender).toDefined();
+      expect(male.gender).toBeDefined();
     });
     
     it("should return a value for property name", function() {
