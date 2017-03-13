@@ -1,10 +1,11 @@
 'use strict';
 
 describe("Test OOP Concepts", function() {
-  var myApp = require('../app/oop.js');
+  var Human = require('../app/Human.js');
+  var Male = require('../app/Male.js');
   var human = new Human('Jane', 25);
   var male = new Male('Kiyosaki', 15, 'male');
-  
+
   describe("Case for base object Human", function() {
     it("should be defined for a new object", function() {
       expect(human).toBeDefined();
@@ -30,8 +31,8 @@ describe("Test OOP Concepts", function() {
       expect(human.age).toEqual(25);
     });
 
-    it("should return `Yippee` for method shout", function() {
-      expect(human.shout()).toEqual('Yippee');
+    it("should return `Yippee!!!` for method shout", function() {
+      expect(human.shout()).toEqual('Yippee!!!');
     });
   });
 
@@ -56,8 +57,8 @@ describe("Test OOP Concepts", function() {
       expect(male.age).toBeDefined();
     });
     
-    it("should return `Jane` for property age", function() {
-      expect(male.age).toEqual(25);
+    it("should return `15` for property age", function() {
+      expect(male.age).toEqual(15);
     });
 
     it("should return `Yeah!!!` for method shout", function() {
