@@ -1,5 +1,5 @@
 describe("Data types tests ", function() {
-  var myApp = require("../../app/dataTypes.js");
+  var myApp = require("../app/dataTypes.js");
   var dataTypes = myApp.dataTypes;
 
   describe("Existence of dataTypes", function() {
