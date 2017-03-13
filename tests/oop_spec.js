@@ -1,6 +1,10 @@
 'use strict';
 
 describe("Test OOP Concepts", function() {
+  var myApp = require('../app/oop.js');
+  var human = new Human('Jane', 25);
+  var male = new Male('Kiyosaki', 15, 'male');
+  
   describe("Case for base object Human", function() {
     it("should be defined for a new object", function() {
       expect(human).toBeDefined();
