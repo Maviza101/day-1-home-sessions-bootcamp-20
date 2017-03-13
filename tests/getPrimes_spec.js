@@ -34,8 +34,8 @@ describe("Find the prime numbers between 0 and a given number n, inclusive", fun
       expect(getPrimes(holla)).toEqual('Argument not a number');
     });
     
-    it("should return `Argument not an integer` for 1.1", function() {
-      expect(getPrimes(1.1)).toEqual('Argument not an integer');
+    it("should return `Number argument is not an integer` for 1.1", function() {
+      expect(getPrimes(1.1)).toEqual('Number argument is not an integer');
     });
 
     it("should return `Integer argument must be greater than 0` for -4", function() {
