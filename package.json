@@ -1,13 +1,13 @@
 {
   "name": "day-1-home-sessions-bootcamp-20",
   "version": "1.0.0",
-  "description": "Implementations of getPrimes().",
+  "description": "Implementation of getPrimes().",
   "main": "app/getPrimes.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "jasmine tests/getPrimes_spec.js"
+    "test": "jasmine tests/*_spec.js"
   },
   "repository": {
     "type": "git",
