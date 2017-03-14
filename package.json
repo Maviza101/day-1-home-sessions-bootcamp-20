@@ -1,8 +1,8 @@
 {
   "name": "day-1-home-sessions-bootcamp-20",
   "version": "1.0.0",
-  "description": "Implementations of getType(), getPrimes() and OOP concepts.",
-  "main": "app/getPrimes.js",
+  "description": "Implementation OOP concepts.",
+  "main": "app/Male.js",
   "directories": {
     "test": "tests"
   },
