@@ -12,5 +12,5 @@ npm test
 * That's all! NPM will install all any required dependencies and run the provided tests on the project.
 
 ## Adding your own tests
-* Just add them under the `tests` directory and save them with the format `something_spec.js`.
+* Just add them under the `tests` directory and save them with the format `someFunctionality_spec.js`.
 * Run `npm` tests again and it will all tests, both new and old.
