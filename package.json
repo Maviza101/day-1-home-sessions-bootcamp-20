@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jasmine tests/oop_spec.js"
+    "test": "jasmine tests/*_spec.js"
   },
   "repository": {
     "type": "git",
