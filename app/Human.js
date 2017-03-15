@@ -1,11 +1,9 @@
 'use strict';
 
-function Human(name, age) {
+module.exports.Human = function(name, age) {
 	this.name = name;
 	this.age = age;
 	this.shout = function() {
 		return 'Yippee!!!';
 	}
 }
-
-module.exports = Human;
