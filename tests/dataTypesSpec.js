@@ -81,7 +81,7 @@ describe("Data types tests ", function() {
     it("should call the `callback` function with argument true, and return `called callback`", function() {
       var callback = function(arg) {
         expect(arg).toBeTruthy();
-        if(arg === true) {
+        if (arg === true) {
           return 'called callback';
         }
       };
@@ -91,7 +91,11 @@ describe("Data types tests ", function() {
 
   describe("Testing other data types outside its requirements", function() {
     it("should return `undefined` for an empty object, {}", function() {
-      expect(dataTypes({})).toBeUndefined();
+      expect(dataTypes({})).not.toBeDefined();
+    });
+
+    it("should return `undefined` for NaN", function() {
+      expect(dataTypes(NaN)).not.toBeDefined();
     });
   });
 });
