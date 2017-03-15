@@ -1,16 +1,11 @@
 'use strict';
 
-function Human(name, age) {
-	this.name = name;
-	this.age = age;
-	this.shout = function() {
-		return 'Yippee!!!';
-	}
-}
+var myHumanApp = require('../app/Human.js');
+var Human = myHumanApp.Human;
 
-function Male(name, age, gender) {
+module.exports.Male = function(name, age, gender) {
   Human.call(this, name, age);
-  Male.prototype = Object.create(Human.prototype);
+  this.prototype = Object.create(Human.prototype);
 
   this.gender = gender;
   this.shout = function() {
@@ -18,4 +13,4 @@ function Male(name, age, gender) {
   }
 }
 
-module.exports = Male;
+
