@@ -1,9 +1,11 @@
 'use strict';
 
 describe("Test OOP Concepts", function() {
-  var Human = require('../app/Human.js');
-  var Male = require('../app/Male.js');
+  var myHumanApp = require('../app/Human.js');
+  var Human = myHumanApp.Human;
   var human = new Human('Jane', 25);
+  var myMaleApp = require('../app/Male.js');
+  var Male = myMaleApp.Male;
   var male = new Male('Kiyosaki', 15, 'male');
 
   describe("Case for base object Human", function() {
