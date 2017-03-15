@@ -2,7 +2,14 @@
 
 module.exports = {
 	dataTypes: function(arg) {
-		var argType = typeof arg;
+    var argType = typeof arg;
+
+    // Note: can't use == here. See the following for details:
+    // https://ariya.io/2014/05/the-curious-case-of-javascript-nan
+    if (argType == 'number' && isNaN(arg)) {
+      return undefined;
+    }
+
 		switch (argType) {
 			case 'string':
 				return arg.length;
