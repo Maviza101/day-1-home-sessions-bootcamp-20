@@ -5,6 +5,7 @@
 git clone https://github.com/Maviza101/day-1-home-sessions-bootcamp-20.git
 ```
 * Open a terminal and `cd` (i.e navigate) into the directory of the repo you cloned above.
+* Run `npm install` to install all dependencies from package.json
 * Enter this command:
 ```bash
 npm test
